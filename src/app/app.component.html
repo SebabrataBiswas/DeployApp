@@ -1,0 +1,14 @@
+<div [class]="'preloader' + (!showLoader ? '' : ' show')">
+  <h1><i class="fa fa-spin fa-spinner"></i> Loading...</h1>
+</div>
+<div>
+  <app-header></app-header>
+  
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
+<div>
+  <app-footer></app-footer>
+</div>
+

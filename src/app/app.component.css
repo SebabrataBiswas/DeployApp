@@ -1,0 +1,25 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease-in-out;
+  }
+  
+  .preloader h1 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+  }
+  
+  .preloader.show {
+    opacity: 1;
+    pointer-events: all;
+  }
